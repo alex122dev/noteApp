@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="page">
+            <section class="all-notes _container">
+                <div class="all-notes__header header-notes">
+                    <ul class="header-notes__list">
+                        <li class="header-notes__text _big-column title">Name</li>
+                        <li class="header-notes__text _small-column title">Created</li>
+                        <li class="header-notes__text _small-column title">Category</li>
+                        <li class="header-notes__text _small-column title">Content</li>
+                        <li class="header-notes__text _big-column title">Dates</li>
+                    </ul>
+                    <div class="header-notes__manage manage-header manage">
+                        <button data-btn="show-archive" type="button" class="manage__btn _icon-archive"></button>
+                        <button data-btn="clear-all" type="button" class="manage__btn _icon-delete"></button>
+                    </div>
+                </div>
+                <div data-archive class="all-notes__archive" hidden></div>
+                <div data-active-notes class="all-notes__items items-notes"></div>
+                <button type="button" class="all-notes__create-btn" data-btn="create">Create Note</button>
+            </section>
+            <section class="notes-category _container">
+                <div class="notes-category__header header-category">
+                    <ul class="header-category__list">
+                        <li class="header-category__text _big-category-column title">Note Category</li>
+                        <li class="header-category__text _small-category-column title">Active</li>
+                        <li class="header-category__text _medium-category-column title">Archived</li>
+                    </ul>
+                </div>
+                <div data-category-items class="notes-category__items items-category"></div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
